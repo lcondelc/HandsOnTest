@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Senior .NET Developer Hands On Test</h1>
+    <p class="lead">This Hands On Test was develop by Leonardo Enrique Conde Chapman</p>
+    <p class="lead"><strong>Email:  </strong>lconde@@outlook.com</p>
+    <p class="lead"><strong>Cel:</strong>(+57) 3013721237</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Employee Id</h2>
+        <p>
+            <input name="employeeId" id="employeeId" />
+        </p>
+        <p><a class="btn btn-default" id="getEmployees">Get Employees</a></p>
+    </div>
+    <table class="table" style="display: none">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Role Name</th>
+                <th scope="col">Contract Type Name</th>
+                <th scope="col">Hourly Salary</th>
+                <th scope="col">Monthly Salary</th>
+                <th scope="col">Annual Salary</th>
+            </tr>
+        </thead>
+        <tbody id="employeesResults"></tbody>
+    </table>
+    <div class="alert alert-warning" role="alert" style="display: none">
+
+    </div>
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/app")
+}
